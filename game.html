@@ -2,21 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emoji Match - Game</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main class="container">
-    <h1>Find the Right Emotion</h1>
 
-    <div id="targetBox" class="target-box">Target: 
-    <span id="targetName"></span></div>
-    <div id="scoreBox" class="score-box">Correct: 0 / 5</div>
+    <!-- Level badge + mission -->
+    <div id="levelBadge" class="level-badge">Level 1</div>
+    <div id="missionBox" class="mission-box"></div>
+
+    <div id="targetBox" class="target-box hidden">Find: <strong><span id="targetName"></span></strong></div>
+    <div id="scoreBox" class="score-box hidden">EXP: 0 / 5</div>
+    <div id="progressBox" class="progress-box hidden"></div>
+
+    <div id="lvl3StatusBox" class="lvl3-status hidden">
+      Tap the emotions in the correct order:
+      <div id="lvl3ProgressRow" class="lvl3-progress-row"></div>
+    </div>
 
     <div id="choicesGrid" class="grid"></div>
 
     <div id="resultBox" class="result hidden"></div>
-    <button id="restartBtn" class="start hidden">Play Again</button>
+
+    <div id="summaryContainer" class="summary-container hidden">
+      <h2>Your Level 2 Series</h2>
+      <div id="summaryBox" class="summary-grid"></div>
+    </div>
+
+    <!-- Level 3: memorise the series -->
+    <div id="lvl3MemoryBox" class="lvl3-memory-box hidden">
+      <h2>Memorise this order!</h2>
+      <div id="lvl3SeriesRow" class="lvl3-series-row"></div>
+      <div id="lvl3Countdown" class="lvl3-countdown"></div>
+    </div>
+
+
+    <!-- Success overlay -->
+    <div id="successOverlay" class="success-overlay hidden">
+      <div class="success-overlay-content">
+        <div id="overlayMessage" class="overlay-message"></div>
+        <button id="overlayNextBtn" class="start">Continue</button>
+      </div>
+    </div>
+
+    <div class="button-row">
+      <button id="restartBtn" class="start hidden">🔁 Play Again</button>
+      <button id="nextlvl" class="start hidden">Continue →</button>
+    </div>
   </main>
 
   <script src="script.js"></script>
