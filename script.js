@@ -695,7 +695,7 @@ function showCongratsScreen() {
   congrats.innerHTML = `
     <div class="congrats-stars">⭐⭐⭐</div>
     <h2 class="congrats-title">Amazing!</h2>
-    <img class="congrats-img" src="congrats.png" alt="Celebration characters" />
+    <img class="congrats-img" src="img/congrats.png" alt="Celebration characters" />
     <p class="congrats-msg">You remembered all 5 emotions in the correct order.<br>You are an emotion champion! 🏆</p>
     <button class="start congrats-btn" onclick="window.location.href='index.html'">🏠 Play Again</button>
   `;
