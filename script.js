@@ -1,11 +1,11 @@
 const emotionCards = [
   { key: 'happy', label: 'Happy', image: 'happy.png' },
-  { key: 'sad', label: 'Sad', image: 'img/sad.png' },
-  { key: 'angry', label: 'Angry', image: 'img/angry.png' },
-  { key: 'funny', label: 'Funny', image: 'img/funny.png' },
-  { key: 'scared', label: 'Scared', image: 'img/scared.png' },
-  { key: 'sleepy', label: 'Sleepy', image: 'img/sleepy.png' },
-  { key: 'tired', label: 'Tired', image: 'img/tired.png' },
+  { key: 'sad', label: 'Sad', image: 'sad.png' },
+  { key: 'angry', label: 'Angry', image: 'angry.png' },
+  { key: 'funny', label: 'Funny', image: 'funny.png' },
+  { key: 'scared', label: 'Scared', image: 'scared.png' },
+  { key: 'sleepy', label: 'Sleepy', image: 'sleepy.png' },
+  { key: 'tired', label: 'Tired', image: 'tired.png' },
 ];
 
 const carouselImg = document.getElementById('carouselImg');
